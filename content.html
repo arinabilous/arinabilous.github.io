@@ -1,0 +1,159 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>content</title>
+  <link rel="stylesheet" href="..\html\css\font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="..\css\style.css">
+  <style>
+    table{
+        border-spacing: 10px;
+        margin-left: 10px;
+        width: 580px;
+        margin-top:20px;
+    }
+
+    td,th{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        background-color:  #242424;
+        color: #fff;
+        border-radius: 200px;
+        box-shadow: 0 0 0 1px rgb(58, 55, 55), 0 0 13px rgb(20, 20, 20);
+    }
+
+    td{
+        padding: 5px;
+        padding-left: 30px;
+    }
+  </style>
+ </head>
+ <body>
+    <div class="topnav" id="myTopnav" >
+                <a href="./content.html"><i class="fa fa-home" aria-hidden="true">Home</i></a>
+                <a href="./my history.html" target="_blank"><i class="fa fa-star"  aria-hidden="true">Моя історія</i></a>
+                <a href="./hobby.html" target="_blank"><i class="fa fa-gamepad" aria-hidden="true">Хоббі</i></a>
+                <a href="./hobby.html" target="_blank"><i class="fa fa-camera-retro" aria-hidden="true">Фото</i></a>
+                <a href="#contact"><i class="fa fa-phone" aria-hidden="true">Контакти</i></a>
+                <a></a>
+                <a></a>
+                <a href="https://www.facebook.com/iryna.bilous.50" target="_blank"><i class="fa fa-facebook" aria-hidden="true">facebook</i></a>
+                <a href="https://www.instagram.com/arina_.mars/" target="_blank"><i class="fa fa-instagram" aria-hidden="true">instagram</i></a>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin-left:60px;">Login</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php">
+                <div class="enter">
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <button type="submit">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+                <div class="container" style="background-color:#f1f1f1">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="reset" name="reset"  class="reset">reset</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    <div class="top">
+        <div class="logoimg">
+                <img src="..\img\red3.jpg" alt="logo" width="100%">
+            <div class="content">
+                <h1 style="font-size:50px;"><i class=" fa fa-heart" id="gohome">IRYNA BILOUS</i></h1>
+            </div>
+            <div class="contentp">
+                <p >"Идея.<br> Она живуча и крайне заразна.<br>Стоит идее завладеть мозгом,
+                <br>избавиться от неё уже практически невозможно"</p>
+            </div>                       
+        </div>                        
+    </div>
+    <div>
+        <table>
+            <caption class="round">Хронологічна таблиця</caption>
+            <tr>
+                <th style="font-size:22px">Дата</th>
+                <th style="font-size:22px">Подія</th>
+            </tr>
+            <tr>
+                <th>06.10.1990</th>
+                <td>Народилася</td>
+            </tr>
+            <tr>
+                <td>1997</td>
+                <td>Перший клас. Школа №9 в м..Калуш</td>
+            </tr>
+            <tr>
+                <td>2006</td>
+                <td>Нова школа №10 фізико-математичний клас</td>
+            </tr>
+            <tr>
+                <td>2008</td>
+                <td>Вступ в інститут НУ"ЛП" ІБІД</td>
+            </tr>
+            <tr>
+                <td>2012</td>
+                <td>Захист диплому бакалавра</td>
+            </tr>
+            <tr>
+                <td rowspan="3" >2013</td>
+                <td>Переддипломна практика в Криму</td>
+            </tr>
+            <tr>
+                <td>Перша робота в проектантській фірмі "ЛюксАр"</td>
+            </tr>
+            <tr>
+                <td>Захист диплому спеціаліста</td>
+            </tr>
+            <tr>
+                <td>2015</td>
+                <td>Робота архітектором в "Земюрконсалтинг"</td>
+            </tr>
+            <tr>
+                <td rowspan="2">2016</td>
+                <td>Переізд за кордон в м. Прушков</td>
+            </tr>
+            <tr>
+                <td>Konsberg Automotive</td>
+            </tr>
+            <tr>
+                <td rowspan="4">2017</td>
+                <td>Скелі Довбуша</td>
+            </tr>
+            <tr>
+                <td>Піп Іван</td>
+            </tr>
+            <tr>
+                <td>Півмарафон "Калуська десятка"</td>
+            </tr><tr>
+                <td>IT cluster academy</td>
+            </tr>
+        </table>
+    </div>
+    <div class="contact" id="contact">
+        <label for="form">Зв'язатися зі мною</label>
+        <form action="/action_page.php">
+            <input type="text" id="fname" name="firstname" placeholder="Ваше ім'я..">
+            <input type="text" id="lname" name="lastname" placeholder="Ваше прізвище..">
+            <label for="country">Країна</label>
+            <select id="country" name="country">
+                <option value="australia">Україна</option>
+                <option value="canada">Польща</option>
+                <option value="usa">Канада</option>
+                <option value="canada">Білорусія</option>
+                <option value="usa">Чехія</option>
+            </select>
+            <label for="subject">Написати листа</label>
+            <textarea id="subject" name="subject" placeholder="Напишіть щось тут.." style="height:200px"></textarea>
+            <input type="submit" value="Надіслати">
+        </form>
+    </div>
+    <footer class="footer" id="contact">
+            <p><i class="fa fa-copyright" aria-hidden="true">copyright <b>Iryna Bilous</b>
+                <i style="margin-left:50px;">тел. +380637998803 email: bilousiryna6@gmail.com</i></i>
+                <a class="a" style="margin-left:80px;" href="https://www.facebook.com/iryna.bilous.50" target="_blank"><i class="fa fa-facebook" aria-hidden="true">facebook</i></a>
+                <a class="a" href="https://www.instagram.com/arina_.mars/" target="_blank"><i class="fa fa-instagram" aria-hidden="true">instagram</i></a>
+                <a class="a" href="#gohome"><i class="fa fa-home" aria-hidden="true">Home</i></a>
+            </p>
+    </footer>
+ </body>
+</html>
